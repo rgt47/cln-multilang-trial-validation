@@ -53,14 +53,14 @@ Each of these layers can be implemented in different
 tools, and the choice of tool shapes the trade-offs
 between accessibility, flexibility, and performance.
 
-This post walks through what I learned about each
-layer, compares the available tooling, and builds
-toward a novel pipeline where non-programmers define
-validation rules in a CSV file, Lua processes those
-rules into JavaScript functions, and a Shiny
-application loads the generated JavaScript for
-real-time form validation. The Lua pipeline is the
-part I find most interesting, and it appears to be
+We walk through what each layer involves, compare
+the available tooling, and build toward a novel
+pipeline where non-programmers define validation
+rules in a CSV file, Lua processes those rules into
+JavaScript functions, and a Shiny application loads
+the generated JavaScript for real-time form
+validation. The Lua pipeline is the most
+architecturally distinctive component and appears
 genuinely novel in the clinical data validation
 context.
 
@@ -100,9 +100,9 @@ context.
    pipeline for dynamic, non-programmer-accessible
    validation rule management.
 
-I am documenting my learning process here. If you
-spot errors or have better approaches, please let me
-know.
+I am documenting my learning process here. Errors
+and better approaches are welcome; see the contact
+section.
 
 
 ![Clinical precision begins with validated data.](media/images/ambiance1.png){.img-fluid}
@@ -1047,24 +1047,22 @@ non-programmers can read and edit, and using Lua to
 generate the execution code, the pipeline makes
 validation logic both accessible and auditable.
 
-Main takeaways:
+In conclusion, four points merit emphasis. First,
+EDC validation encompasses at least ten distinct
+check categories, each targeting a different data
+integrity failure mode. Second, R (`validate`,
+`pointblank`), Python (`pandera`), and SQL provide
+flexible validation for custom analysis pipelines.
+Third, Shiny supports three tiers of form
+validation: `validate()`/`need()`, `shinyvalidate`,
+and client-side JavaScript. Fourth, a Lua-generated
+JavaScript pipeline can bridge the gap between
+non-programmer rule definition and real-time
+browser validation.
 
-- EDC validation encompasses at least ten distinct
-  check categories, each targeting a different data
-  integrity failure mode.
-- R (`validate`, `pointblank`), Python (`pandera`),
-  and SQL provide flexible validation for custom
-  analysis pipelines.
-- Shiny supports three tiers of form validation:
-  `validate()`/`need()`, `shinyvalidate`, and
-  client-side JavaScript.
-- A Lua-generated JavaScript pipeline can bridge the
-  gap between non-programmer rule definition and
-  real-time browser validation.
-
-If you are working with clinical trial data
+For those working with clinical trial data
 validation, I would be interested to hear which
-combination of tools you have found effective in
+combination of tools has proved effective in
 practice.
 
 
@@ -1142,11 +1140,10 @@ Rscript -e "shiny::runApp('app.R')"
 
 I would enjoy hearing from you if:
 
-- You spot an error or a better approach to any of the
-  code in this post.
-- You have suggestions for topics you would like to see
-  covered.
-- You want to discuss R programming, data science, or
-  reproducible research.
-- You have questions about anything in this tutorial.
-- You just want to say hello and connect.
+- An error or a better approach to any of the code
+  in this post comes to mind.
+- There are suggestions for topics to see covered.
+- The interest is in discussing R programming, data
+  science, or reproducible research.
+- There are questions about anything in this tutorial.
+- The goal is simply to say hello and connect.
