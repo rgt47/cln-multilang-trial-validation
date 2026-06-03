@@ -11,7 +11,7 @@ description: >
   mapping out EDC edit checks, open-source tools, and
   the possibility of generating JavaScript validation
   from a simple spreadsheet processed by Lua.
-image: "media/images/hero.jpg"
+image: "media/images/hero.png"
 document-type: "blog"
 draft: false
 execute:
