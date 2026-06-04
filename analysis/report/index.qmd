@@ -13,7 +13,7 @@ description: >
   from a simple spreadsheet processed by Lua.
 image: "media/images/hero.png"
 document-type: "blog"
-draft: false
+draft: true
 execute:
   echo: true
   warning: false
@@ -227,7 +227,7 @@ matching on name, date of birth, and enrolment date.
 ![Validation tools range from proprietary EDC
 platforms to open-source systems and general-purpose
 programming languages.
-](media/images/ambiance2.jpg){.img-fluid}
+](media/images/ambiance2.png){.img-fluid}
 
 
 ## Deeper Analysis: Tools for Implementing
@@ -917,7 +917,7 @@ server <- function(input, output, session) {
 ![The pipeline from spreadsheet to browser validation
 bridges the gap between clinical domain expertise and
 software implementation.
-](media/images/ambiance3.jpg){.img-fluid}
+](media/images/ambiance3.png){.img-fluid}
 
 
 # What Did We Learn?
