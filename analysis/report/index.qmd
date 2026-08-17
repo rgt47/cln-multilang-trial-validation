@@ -1,16 +1,9 @@
 ---
-title: "Clinical Trial Data Validation Across
-  Languages and Tools"
+title: "Clinical Trial Data Validation Across Languages and Tools"
 author: "Ronald G. Thomas"
 date: "2025-01-15"
 categories: [clinical-trials, data-cleaning, r, lua, javascript]
-description: >
-  I did not really understand how many layers of
-  validation sit between a clinical trial data entry
-  form and a reliable analysis dataset until I started
-  mapping out EDC edit checks, open-source tools, and
-  the possibility of generating JavaScript validation
-  from a simple spreadsheet processed by Lua.
+description: "I did not really understand how many layers of validation sit between a clinical trial data entry form and a reliable analysis dataset until I started mapping out EDC edit checks, open-source tools, and the possibility of generating JavaScript validation from a simple spreadsheet processed by Lua."
 image: "media/images/hero.png"
 document-type: "blog"
 draft: true
@@ -103,7 +96,7 @@ and better approaches are welcome; see the contact
 section.
 
 
-![Clinical precision begins with validated data.](media/images/ambiance1.png){.img-fluid}
+![Clinical precision begins with validated data.](media/images/ambiance1.png){.img-fluid height=3.5in}
 
 
 # Prerequisites and Setup
@@ -223,7 +216,7 @@ matching on name, date of birth, and enrolment date.
 ![Validation tools range from proprietary EDC
 platforms to open-source systems and general-purpose
 programming languages.
-](media/images/ambiance2.png){.img-fluid}
+](media/images/ambiance2.png){.img-fluid height=3.5in}
 
 
 ## Deeper Analysis: Tools for Implementing
@@ -913,7 +906,7 @@ server <- function(input, output, session) {
 ![The pipeline from spreadsheet to browser validation
 bridges the gap between clinical domain expertise and
 software implementation.
-](media/images/ambiance3.png){.img-fluid}
+](media/images/ambiance3.png){.img-fluid height=3.5in}
 
 
 # What Did We Learn?
