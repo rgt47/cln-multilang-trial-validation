@@ -1061,10 +1061,10 @@ practice.
 
 ### Related Posts
 
-- [Configure the Command Line for Data Science
-  Development](../01-configtermzsh/configtermzsh/analysis/report/)
-- [Building a Minimalist EDC
-  Application](../42-zzedcindependence/)
+- [Unix Command-Line Workspace Setup for Data Science
+  Development](../wf-unix-workspace-config/)
+- [Running ZZedc Independently for Clinical Research Data
+  Management](../cln-zzedc-investigator-independence/)
 
 ### Key Resources
 
