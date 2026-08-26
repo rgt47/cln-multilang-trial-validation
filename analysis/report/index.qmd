@@ -15,10 +15,8 @@ cluster: clinical-and-cloud
 cluster-order: 1
 ---
 
-![Clinical trial data validation spans multiple
-languages and tools, from spreadsheet rule definitions
-to real-time browser checks.
-](media/images/hero.png){.img-fluid width=80% fig-align="center"}
+![A fountain pen resting across three notebooks, each open to a page in a different handwriting style: one validation check expressed consistently across different languages.
+](media/images/hero.jpg){.img-fluid width=80% fig-align="center"}
 
 
 # Introduction
@@ -96,7 +94,7 @@ and better approaches are welcome; see the contact
 section.
 
 
-![Clinical precision begins with validated data.](media/images/ambiance1.png){.img-fluid height=3.5in}
+![Three differently-shaped keys on a single ring, resting on a technical drawing: one credential, multiple compatible systems.](media/images/ambiance1.jpg){.img-fluid height=3.5in}
 
 
 # Prerequisites and Setup

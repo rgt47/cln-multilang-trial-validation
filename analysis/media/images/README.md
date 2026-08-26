@@ -1,5 +1,22 @@
 # Image attributions
 
+## Status (2026-08-25)
+
+`hero.jpg` and `ambiance1.jpg` are genuine Gemini generations as of
+2026-08-25 (generated via the `gemini-image-generator` tool),
+replacing a GitHub octocat logo and a stray Reddit screenshot.
+
+- `hero.jpg`: a fountain pen resting across three notebooks, each
+  open to a page in a different handwriting style. Metaphor: one
+  validation check expressed consistently across different
+  languages.
+- `ambiance1.jpg`: three differently-shaped keys on a single ring,
+  resting on a technical drawing. Metaphor: one credential, multiple
+  compatible systems.
+
+Both processed via `magick -resize 1600x -strip -quality 85` to
+1600x873.
+
 ## Placeholder coffee images (temporary ambiance slots)
 
 These images are shared placeholders used across all posts until replaced
