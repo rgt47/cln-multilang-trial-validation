@@ -77,7 +77,7 @@ context.
 
 ## Objectives
 
-1. Catalogue the ten major categories of EDC
+1. Catalog the ten major categories of EDC
    validation checks used in clinical trials, with
    concrete examples for each.
 2. Compare proprietary and open-source EDC platforms
@@ -191,24 +191,24 @@ treatment details must be present.
 
 **7. MedDRA and WHO Drug Dictionary validation**
 checks that reported adverse events and medications
-map to standardised medical dictionaries. An adverse
+map to standardized medical dictionaries. An adverse
 event entered as "Headache" must resolve to the
 correct MedDRA preferred term.
 
 **8. Conditional queries based on risk-based
 monitoring** use statistical rules or machine
-learning to prioritise data review. Sites with higher
+learning to prioritize data review. Sites with higher
 rates of protocol deviations receive additional
 validation scrutiny.
 
 **9. Visit and event sequencing checks** ensure
 that study visits and procedures occur in the correct
-order. Randomisation must precede the first dose of
+order. Randomization must precede the first dose of
 study drug.
 
 **10. Duplicate record detection** identifies
 duplicate patients or entries using probabilistic
-matching on name, date of birth, and enrolment date.
+matching on name, date of birth, and enrollment date.
 
 
 ![Validation tools range from proprietary EDC
@@ -222,8 +222,8 @@ Validation Checks
 
 The ten categories above can be implemented across a
 range of platforms. The choice depends on
-organisational context, budget, and the degree of
-customisation required.
+organizational context, budget, and the degree of
+customization required.
 
 ### Proprietary EDC Systems
 
@@ -528,7 +528,7 @@ reference datasets without server calls:
 
 ### AJAX for Remote Database Queries
 
-For larger datasets or centralised validation, AJAX
+For larger datasets or centralized validation, AJAX
 requests query a server-side SQL database:
 
 ```html
@@ -793,7 +793,7 @@ restarting the Shiny application.
 
 Instead of reading from a CSV file, the Lua script
 can query a database for validation rules, enabling
-centralised rule management across multiple
+centralized rule management across multiple
 applications:
 
 ```sql
@@ -859,7 +859,7 @@ server <- function(input, output, session) {
 
 | Feature | CSV-Based Rules | Database-Based Rules |
 |---------|-----------------|----------------------|
-| Storage | Local file | Centralised database |
+| Storage | Local file | Centralized database |
 | Scalability | Small teams | Large-scale use |
 | User interface | Spreadsheet editor | Web admin panel |
 | Performance | Fast file read | Requires DB query |
@@ -873,7 +873,7 @@ server <- function(input, output, session) {
    pipeline trusts that the CSV content is safe to
    embed as JavaScript. Malicious rule expressions
    could execute arbitrary code in the browser.
-   Sanitise inputs before code generation.
+   Sanitize inputs before code generation.
 
 2. **Polling interval trade-offs.** The five-second
    `invalidateLater()` reload is a balance between
@@ -909,7 +909,7 @@ software implementation.
 
 # What Did We Learn?
 
-## Lessons Learnt
+## Lessons Learned
 
 **Conceptual Understanding:**
 
@@ -951,7 +951,7 @@ software implementation.
 - Embedding user-defined expressions directly into
   generated JavaScript creates a code injection
   surface that must be mitigated through input
-  sanitisation.
+  sanitization.
 - The `invalidateLater()` polling pattern in Shiny is
   convenient but inefficient at scale; event-driven
   approaches (file watchers, WebSocket notifications)
@@ -973,7 +973,7 @@ software implementation.
   dedicated study.
 - The Lua pipeline is presented as a proof of concept.
   Production deployment would require input
-  sanitisation, error handling, logging, and
+  sanitization, error handling, logging, and
   integration testing.
 - The comparison of EDC platforms is based on publicly
   available documentation rather than hands-on
@@ -991,7 +991,7 @@ software implementation.
 ## Opportunities for Improvement
 
 1. Build a complete working prototype of the Lua
-   pipeline with input sanitisation, error handling,
+   pipeline with input sanitization, error handling,
    and a test suite that validates generated JavaScript
    against known inputs.
 2. Add a Shiny-based admin panel where data managers
