@@ -6,7 +6,7 @@ categories: [clinical-trials, data-cleaning, r, lua, javascript]
 description: "I did not really understand how many layers of validation sit between a clinical trial data entry form and a reliable analysis dataset until I started mapping out EDC edit checks, open-source tools, and the possibility of generating JavaScript validation from a simple spreadsheet processed by Lua."
 image: "media/images/hero.png"
 document-type: "blog"
-draft: true
+draft: false
 execute:
   echo: true
   warning: false
