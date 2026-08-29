@@ -27,8 +27,8 @@ tried to map out the full landscape for a clinical
 trial database. What began as a question about edit
 checks in an EDC system quickly expanded into
 comparisons across proprietary platforms, open-source
-alternatives, general-purpose languages, and a
-surprisingly elegant pipeline that starts with a
+alternatives, and general-purpose languages. It ended
+with a surprisingly elegant pipeline that starts with a
 spreadsheet and ends with real-time browser validation
 powered by Lua-generated JavaScript.
 
@@ -42,8 +42,8 @@ Each of these layers can be implemented in different
 tools, and the choice of tool shapes the trade-offs
 between accessibility, flexibility, and performance.
 
-We walk through what each layer involves, compare
-the available tooling, and build toward a novel
+We walk through what each layer involves and compare
+the available tooling. We then build toward a novel
 pipeline where non-programmers define validation
 rules in a CSV file, Lua processes those rules into
 JavaScript functions, and a Shiny application loads
