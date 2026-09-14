@@ -3,7 +3,7 @@ title: "Clinical Trial Data Validation Across Languages and Tools"
 author: "Ronald G. Thomas"
 date: "2025-01-15"
 categories: [clinical-trials, data-cleaning, r, lua, javascript]
-description: "I did not really understand how many layers of validation sit between a clinical trial data entry form and a reliable analysis dataset until I started mapping out EDC edit checks, open-source tools, and the possibility of generating JavaScript validation from a simple spreadsheet processed by Lua."
+description: "Several layers of validation sit between a clinical trial data entry form and a reliable analysis dataset. This post maps them out: EDC edit checks, open-source tools, and the possibility of generating JavaScript validation from a simple spreadsheet processed by Lua."
 image: "media/images/hero.png"
 document-type: "blog"
 draft: false
@@ -21,13 +21,12 @@ cluster-order: 1
 
 # Introduction
 
-I did not really understand how much complexity
-hides behind the phrase "data validation" until I
-tried to map out the full landscape for a clinical
-trial database. What began as a question about edit
-checks in an EDC system quickly expanded into
+Considerable complexity hides behind the phrase 'data
+validation'. Mapping out the full landscape for a
+clinical trial database begins as a question about edit
+checks in an EDC system and quickly expands into
 comparisons across proprietary platforms, open-source
-alternatives, and general-purpose languages. It ended
+alternatives, and general-purpose languages. It ends
 with a surprisingly elegant pipeline that starts with a
 spreadsheet and ends with real-time browser validation
 powered by Lua-generated JavaScript.
