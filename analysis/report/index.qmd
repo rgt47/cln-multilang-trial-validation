@@ -18,6 +18,8 @@ cluster-order: 1
 ![A fountain pen resting across three notebooks, each open to a page in a different handwriting style: one validation check expressed consistently across different languages.
 ](media/images/hero.jpg){.img-fluid width=80% fig-align="center"}
 
+*One validation rule, written once and checked the same way in every
+language and tool that touches the data.*
 
 # Introduction
 
@@ -213,7 +215,7 @@ matching on name, date of birth, and enrollment date.
 ![Validation tools range from proprietary EDC
 platforms to open-source systems and general-purpose
 programming languages.
-](media/images/ambiance2.png){.img-fluid height=3.5in}
+](media/images/ambiance2.jpg){.img-fluid height=3.5in}
 
 
 ## Deeper Analysis: Tools for Implementing
@@ -903,7 +905,7 @@ server <- function(input, output, session) {
 ![The pipeline from spreadsheet to browser validation
 bridges the gap between clinical domain expertise and
 software implementation.
-](media/images/ambiance3.png){.img-fluid height=3.5in}
+](media/images/ambiance3.jpg){.img-fluid height=3.5in}
 
 
 # What Did We Learn?
